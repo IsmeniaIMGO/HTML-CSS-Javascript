@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Modelo OSI y TCP/IP</title>
+    <style>
+        p {
+            text-align: justify; /* Justificar el texto dentro del párrafo */
+        }
+        body {
+            margin: 60px; /* Márgenes para el cuerpo de la página */
+            background-image: url(fondo.jpg); /* Ruta de la imagen de fondo */
+            background-color: #f1f1f1; /* Color de fondo alternativo */
+            background-size: cover; /* Ajustar imagen al tamaño del contenedor */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ajusta la altura del contenedor según tus necesidades */
+        }
+        .container img {
+            max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+            max-height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<header>
+    <h1 style="color: navy; font-size: 50px; text-align: center;">Modelo OSI y TCP/IP</h1>
+</header>
+<section>
+    <ul>
+        <!-- Link to every section in the page -->
+        <li><a href="#section1">Capa de Aplicacion</a></li>
+        <li><a href="#section2">Capa de Transporte</a></li>
+        <li><a href="#section3">Capa de Red</a></li>
+        <li><a href="#section4">Capa de Enlace de datos</a></li>
+        <li><a href="#video">video explicacion</a></li>
+    </ul>
+</section>
+
+<div class="container">
+    <img src="img1.jpg" alt="Diferencias entre los modelos">
+</div>
+
+<div class="container">
+    <img src="img2.jpg" alt="Resumen de protocolos">
+</div>
+
+<main>
+    <section id="section1">
+        <h2 style="color: navy; font-size: 30px; text-align: left;">Capa de Aplicación</h2>
+        <p>
+            La capa de aplicación es la capa más alta en el modelo OSI y TCP/IP. Es responsable de proporcionar servicios de comunicación entre las aplicaciones de los usuarios y la red. Aquí es donde se encuentran los protocolos de aplicaciones específicas, como HTTP (Protocolo de Transferencia de Hipertexto), FTP (Protocolo de Transferencia de Archivos) y SMTP (Protocolo Simple de Transferencia de Correo).
+        </p>
+
+    </section>
+
+    <section  id="section2">
+        <h2 style="color: navy; font-size: 30px; text-align: left;">Capa de Transporte</h2>
+        <p>
+            La capa de transporte se encuentra por debajo de la capa de aplicación y es responsable de la entrega confiable de los datos entre hosts finales. Esta capa se encarga de dividir los datos de la capa de aplicación en segmentos o datagramas, y luego los envía a través de la red. El protocolo principal de esta capa es el TCP (Protocolo de Control de Transmisión), que proporciona un servicio orientado a la conexión y garantiza la entrega ordenada y confiable de los datos. También existe el protocolo UDP (Protocolo de Datagramas de Usuario), que es un protocolo sin conexión y más adecuado para aplicaciones que requieren una transmisión rápida pero no necesariamente fiable.
+        </p>
+    </section>
+
+    <section  id="section3">
+        <h2 style="color: navy; font-size: 30px; text-align: left;">Capa de Red</h2>
+
+        <p>
+            La capa de red se encuentra por debajo de la capa de transporte y es responsable de la entrega de los paquetes de datos a través de la red desde el origen al destino final. Esta capa se encarga de enrutar los paquetes de datos entre diferentes redes utilizando algoritmos de enrutamiento, como el enrutamiento IP (Protocolo de Internet). Además, esta capa proporciona funciones de direccionamiento, fragmentación y reensamblaje de paquetes.
+        </p>
+    </section>
+
+    <section  id="section4">
+        <h2 style="color: navy; font-size: 30px; text-align: left;">Capa de Enlace de datos</h2>
+        <p>
+            La capa de enlace de datos es la capa más baja en el modelo OSI y TCP/IP. Se encarga de la transferencia de datos confiable entre nodos adyacentes en una red local. Esta capa toma los paquetes de la capa de red y los divide en tramas de datos más pequeñas, que luego se envían a través del medio físico de la red. También proporciona detección y corrección de errores, así como control de acceso al medio y control de flujo.
+        </p>
+    </section>
+
+    <section id="video">
+        <h3 style="color: honeydew; font-size: 30px; text-align: left;">video explicacion</h3>
+        <p>
+            El siguiente video explica con detalle como funciona el modelo TCP/IP
+            <a href="https://www.youtube.com/watch?v=1pB2kan_AFk"
+               target="_blank" title="video">VIDEO:Click aqui</a>
+        </p>
+    </section>
+    <p>
+        subir: <a href="#top">subir</a>
+    </p>
+
+</main>
+
+</body>
+</html>
